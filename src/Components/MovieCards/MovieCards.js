@@ -4,15 +4,18 @@ import MovieRating from '../Rating/Rating'
 
 const MovieCards = ({movie}) => {
   return (
-    <div>
+    <div className='card-btn'>
     <Card style={{ width: '18rem', height:'50rem' }}>
       <Card.Img variant="top" src={movie.posterUrl} />
       <Card.Body>
         <Card.Title>{movie.title}</Card.Title>
         <Card.Text>{movie.description}</Card.Text>
         <MovieRating isMovieRating={true} movieRating ={movie.rate}/>
-        
-        <Button variant="primary">Go somewhere</Button>
+       
+        <div>
+        <Button><a href={movie.trailer} target={"blanck"}> Trailer </a></Button>
+
+        </div>
       </Card.Body>
     </Card>
     </div>
