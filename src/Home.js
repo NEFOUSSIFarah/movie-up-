@@ -4,7 +4,7 @@ import './App.css';
 import Footer from './Components/Footer/Footer';
 import MovieCards from './Components/MovieCards/MovieCards';
 import NavBar from './Components/NavBar/NavBar';
-import Errors from './Errors/Errors';
+import Errors from './Components/Errors/Errors';
 
 const Home = () => {
   return (
